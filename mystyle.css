@@ -15,3 +15,7 @@ td, th{
 tr:nth-chid(even){
   background-color: #dddddd;
 }
+p.ex1P{
+    margin-left: 250px;
+  
+    }
