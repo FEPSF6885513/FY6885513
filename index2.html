@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG0018 Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ENG0018 Lab H4 Webpage</h1>
+    </header>
+
+    <main>
+        <!-- Section for Embedded Video -->
+        <section>
+            <h2>Audio-Enhanced Presentation</h2>
+            <video controls width="600">
+                <source src="ENG0018_Presentation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Section for Word Count -->
+        <section>
+            <h2>Word Count</h2>
+            <p id="Section1">This is a placeholder text for Section 1. Replace this with your actual content.</p>
+            <p id="Section2">This is a placeholder text for Section 2. Replace this with your actual content.</p>
+            <div id="wordCountDisplay">
+                Total Word Count: <span id="wordCount">0</span>
+            </div>
+        </section>
+
+        <!-- Section for Timestamp -->
+        <section>
+            <h2>Submission Timestamp</h2>
+            <p>Last Modified: <span id="lastModified">Loading...</span></p>
+            <button id="verifyButton">Verify Last Modified Time</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ENG0018 Coursework</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
