@@ -45,3 +45,25 @@ footer {
     padding: 1em 0;
     background: #f1f1f1;
 }
+
+table{
+  font-family: arrial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+  
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+
+tr:nth-chid(even){
+  background-color: #dddddd;
+}
+p.ex1P{
+    margin-left: 250px;
+  
+    }
