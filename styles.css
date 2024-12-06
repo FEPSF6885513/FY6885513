@@ -46,24 +46,28 @@ footer {
     background: #f1f1f1;
 }
 
-table{
-  font-family: arrial, sans-serif;
-  border-collapse: collapse;
-  width: 30%;
-  
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; /* Changed width to 100% for better alignment */
+    margin: 20px 0;
 }
 
-td, th{
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
-tr:nth-chid(even){
-  background-color: #dddddd;
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Adjusted color for a softer look */
 }
-p.ex1P{
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Ensures alternating row colors */
+}
+
+p.ex1P {
     margin-left: 250px;
-  
-    }
+    text-align: justify; /* Ensures proper alignment with justified text */
+}
