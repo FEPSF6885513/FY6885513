@@ -1,9 +1,16 @@
 // Word Count Script
 function updateWordCount() {
-    const section1 = document.getElementById('Section1').textContent;
-    const section2 = document.getElementById('Section2').textContent;
+    const sections = [
+        document.getElementById('Section1').textContent,
+        document.getElementById('Section2').textContent,
+        document.getElementById('Section3').textContent,
+        document.getElementById('Section4').textContent,
+        document.getElementById('Section5').textContent,
+        document.getElementById('Section6').textContent,
+        document.getElementById('Section7').textContent
+    ];
 
-    const totalWords = section1.split(/\s+/).length + section2.split(/\s+/).length;
+    const totalWords = sections.reduce((acc, section) => acc + section.split(/\s+/).length, 0);
 
     document.getElementById('wordCount').textContent = totalWords;
 }
@@ -13,7 +20,6 @@ window.addEventListener('load', updateWordCount);
 
 // Timestamp Script
 function getLastUpdatedTime() {
-    // Placeholder GitHub API URL (replace with actual username and repository)
     const apiUrl = "https://api.github.com/repos/username/repository/commits?per_page=1";
 
     fetch(apiUrl)
@@ -31,3 +37,4 @@ function getLastUpdatedTime() {
 // Fetch last modified time on page load and button click
 window.addEventListener('load', getLastUpdatedTime);
 document.getElementById('verifyButton').addEventListener('click', getLastUpdatedTime);
+
