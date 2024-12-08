@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #121111;
     color:  #fffefe;
 }
 
@@ -56,20 +56,20 @@ a:link {
     text-decoration: none;
   }
   
-  a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
